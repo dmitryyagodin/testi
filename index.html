@@ -24,31 +24,31 @@
     </div>
   </header>
   <div class="flex-fill d-flex justify-content-center page__wrapper">
-    <div class="row">
-      <main class="container-fluid main col-10">
-        <div class="row">
+    <div class="row m-0">
+      <main class="main container-fluid col-10">
+        <div class="main__div--head row">
           <nav class="col-12 pl-0" aria-label="breadcrumb">
-            <ol class="breadcrumb">
+            <ol class="breadcrumb mb-0 p-2">
               <li class="breadcrumb-item"><a href="#">Etusivu</a></li>
               <li class="breadcrumb-item"><a href="#">Kirjasto</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Turvallisuusohjeet 2020</li>
+              <li class="font-weight-bold breadcrumb-item active" aria-current="page" style="color: #333">Turvallisuusohjeet 2020</li>
             </ol>
           </nav>
         </div>
-        <div class="row">
-          <h2 class="pr-2 col-12 main__page-title"><i class="fas fa-book"></i>Turvallisuusohjeet 2020</h2>
+        <div class="row mr-0">
+          <h2 class="pr-2 col-12 main__page-title"><i class="fas fa-book mr-2"></i>Turvallisuusohjeet 2020</h2>
         </div>
-        <div class="row">
+        <div class="main__div--content row mt-4">
           <div class="col-2 p-0">
             <content-nav></content-nav>
           </div>
-          <div class="col-10">
+          <div class="col-10 pl-0">
             <main-article></main-article>
           </div>
         </div>
       </main>
 
-      <aside class="side-bar col-2">
+      <aside class="side-bar col-2 pt-2">
         <side-menu heading="ajassa"
           menu-items='Oma työpöytä,Uutiset,Ilmoitukset,Kalenteri,Ryhmätyötila,Keskustelu,Sähköposti'>
         </side-menu>
@@ -68,8 +68,7 @@
   <script type="module" src="./components/sideMenu.js"></script>
   <script type="module" src="./components/userInfo.js"></script>
   <script type="module" src="./components/contentNav.js"></script>
-  <script type="moudule" src="./components/main-article.js"></script>
-  <script src="./index.js"></script>
+  <script src="./components/mainArticle.js"></script>
 </body>
 
 </html>

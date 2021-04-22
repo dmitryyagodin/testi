@@ -1,3 +1,6 @@
+// Tämä on <user-info> web komponenti, joka tuottaa 
+// käyttäjän henkilökohtaiset tiedot sivun headeriin. 
+
 import fontAwesomeIcons from './icons.js';
 
 const template = document.createElement('template');

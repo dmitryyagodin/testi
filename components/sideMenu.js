@@ -1,3 +1,6 @@
+// Tämä on <side-menu> web komponenti, joka tuottaa sivuston sisäiset navigointi palstoja
+//  
+
 import fontAwesomeIcons from "./icons.js";
 
 const bootstrapListItemClass =
@@ -60,8 +63,8 @@ class SideMenu extends HTMLElement {
     </style>
 
 
-    <div class="container p-0">
-      <h2 class="side-menu__heading pl-3 pt-2 pb-2">${this.heading}</h2>
+    <div class="container p-0 pb-2">
+      <h2 class="side-menu__heading pl-2 pt-1 pb-2">${this.heading}</h2>
       <div class="list-group">${this.data}</div>
     </div>
     `;
