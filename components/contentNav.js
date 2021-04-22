@@ -29,7 +29,8 @@ const bootstrapStyles = `
 
 const defaultItem = `
   <a href="#" 
-     class="text-light bg-dark list-group-item list-group-item-action font-weight-bold"
+     class="font-weight-bold text-light bg-dark list-group-item list-group-item-action navigation-item"
+     style="background-color: #f5f5f5"
   >Tulipalot</a>
 `;
 
@@ -39,13 +40,40 @@ class ContentNav extends HTMLElement {
     this.shadow = this.attachShadow({ mode: "open" });
   }
 
+  static get observedAttributes() {
+    return ["current-page"];
+  }
+
+  get current() {
+    return this.getAttribute("current-page");
+  }
+
   connectedCallback() {
     this.render();
+  }
+
+  attributeChangedCallback(propName, oldValue, newValue) {
+    
+    if (propName === "current-page" && oldValue !== null) {
+      const listItems = this.shadow.querySelectorAll('.list-group-item');
+      const currentItem = this.shadow.querySelector('.bg-dark');
+      currentItem.classList.remove('bg-dark');
+      currentItem.classList.remove('font-weight-bold');
+      currentItem.classList.remove('text-light');
+
+      listItems.forEach(el => {
+        if (el.innerText === newValue) {
+          console.log("YES")
+          el.className += 'font-weight-bold text-light bg-dark';
+        }
+      });
+    }
   }
 
   render() {
     let eventProviders = {};
     let itemsToRender = [];
+    
 
     fetch(url)
       .then((response) => response.json())

@@ -28,6 +28,8 @@ const customStyle = `
 contentNavBar.addEventListener("click", (event) => {
   const eventProvider = event.composedPath()[0].innerText;
   mainArticleDiv.setAttribute("value", eventProvider);
+  contentNavBar.setAttribute("current-page", eventProvider);
+
 });
 
 const url = "https://api.hel.fi/linkedevents/v1/event/?start=now&end=today";
