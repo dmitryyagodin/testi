@@ -4,6 +4,17 @@ const template = document.createElement('template');
 
 
 template.innerHTML = `
+  <style>
+  .list-group-item {
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #ddd;
+  }
+  .list-group-item:hover {
+    color: black;
+  }
+  
+  </style>
   
   <div class="container p-0">
     <div class="list-group">
@@ -33,6 +44,7 @@ class ContentNav extends HTMLElement {
       .then(response => response.json())
       .then(json => {
         json.data.forEach((el) => {
+          console.log(el.provider)
           if (el.provider && el.name && el.description) {
             if (!eventProviders[el.provider.fi]) {
               eventProviders[el.provider.fi] = true;
