@@ -58,14 +58,17 @@ class MainArticle extends HTMLElement {
     }
   }
   render() {
-    console.log(this.value)
+    
     if (this.value !== "Tulipalot") {
+      
       fetch(url)
         .then((response) => response.json())
         .then((json) => {
           json.data.find((el) => {
             if (el.provider && el.name && el.description) {
               if (el.provider.fi === this.value) {
+                // if there is a valid event by a specified provider, render it
+                // otherwise render the default text
                 this.shadow.innerHTML = `
                 ${bootstrapStyles}
                 ${fontAwesomeStyles}

@@ -14,6 +14,12 @@ template.innerHTML = `
     justify-content: space-between;
     width: 250px;
   }
+
+  .fa-search,
+  .fa-folder-open,
+  .fa-bell {
+    cursor: pointer;
+  }
   
   </style>
 
