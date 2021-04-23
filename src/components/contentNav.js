@@ -34,7 +34,7 @@ const defaultItem = `
   >Tulipalot</a>
 `;
 
-class ContentNav extends HTMLElement {
+export class ContentNav extends HTMLElement {
   constructor() {
     super();
     this.shadow = this.attachShadow({ mode: "open" });
@@ -63,7 +63,6 @@ class ContentNav extends HTMLElement {
 
       listItems.forEach(el => {
         if (el.innerText === newValue) {
-          console.log("YES")
           el.className += 'font-weight-bold text-light bg-dark';
         }
       });
@@ -105,4 +104,4 @@ class ContentNav extends HTMLElement {
   }
 }
 
-window.customElements.define("content-nav", ContentNav);
+

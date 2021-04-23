@@ -1,11 +1,15 @@
 # Abako rekrytointitesti
 
+npm install (lataa dependencies)
+npm run dev (avaa selaimella automattisesti)
+
 Tehtävänanto löytyy [tästä](https://www.abako.fi/rekrytointi/rekry.html)
 
 - tekija: *Dmitry Yagodin*
 - sähköposti: dmitry.yagodin@gmail.com
 - alku: 20.04.2021 20:00
 - loppu: 22.04.2021 23:00
+- tehtävän kokonaisaika noin: **10 tuntia** (sis. ulkoisen tiedoston löytämien)
 
 ## Kuvaus
 Tämä sivu näyttää mallisivustoa ja hakee tietoa ajankohtasista tapahtumista pääkaupunkiseudulla.
@@ -16,7 +20,7 @@ Tämän saavuttamiseksi sivu hyödyntää avoimestä lähteestä ([Helsinki Link
 ## Tehtävässä käytettyt teknologiat ja ressursit
 - Bootstrap 4 (v4.4.1)
 - FontAwesome Ikonit (v5.7.1)
-- Live Sass Compiler (v3.0.0)
+- Parcel bundler (v1.12.5)
 - VS Code (editointi)
 - Unsplash.com (kuva)
 - Loremipsum.fi (teksti)

@@ -34,7 +34,7 @@ contentNavBar.addEventListener("click", (event) => {
 
 const url = "https://api.hel.fi/linkedevents/v1/event/?start=now&end=today";
 
-class MainArticle extends HTMLElement {
+export class MainArticle extends HTMLElement {
   constructor() {
     super();
     this.shadow = this.attachShadow({ mode: "open" });
@@ -108,5 +108,3 @@ class MainArticle extends HTMLElement {
     } 
   }
 }
-
-window.customElements.define("main-article", MainArticle);

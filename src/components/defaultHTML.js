@@ -12,7 +12,7 @@ const defaultHTML = `
           </div>
         </div>
         <img class="article__image img-fluid float-left pt-3 pr-3"
-          src="./assets/lauren-coleman-shy0cEi7h1o-unsplash.jpg" alt="Dark hill under fiery sky">
+          src="https://images.unsplash.com/photo-1434139240289-56c519f77cb0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Dark hill under fiery sky">
         <p class="pt-3 pr-3">Jukolan talo, eteläisessä Hämeessä, seisoo erään mäen pohjoisella rinteellä, liki
           Toukolan kylää. Sen
           läheisin ym­päristö on kivinen tanner, mutta alempana alkaa pellot, joissa, ennenkuin talo oli häviöön

@@ -9,7 +9,7 @@ const bootstrapListItemClass =
 const kirjastoActive = 
   '<a href="#" class="list-group-item active disabled border-dark bg-dark">';
 
-class SideMenu extends HTMLElement {
+export class SideMenu extends HTMLElement {
   constructor() {
     super();
     this.shadow = this.attachShadow({ mode: "open" });
@@ -67,4 +67,4 @@ class SideMenu extends HTMLElement {
   }
 }
 
-window.customElements.define("side-menu", SideMenu);
+// window.customElements.define("side-menu", SideMenu);

@@ -37,7 +37,7 @@ template.innerHTML = `
   </div>
   `;
 
-class UserInfo extends HTMLElement {
+export class UserInfo extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({mode: 'open'});
@@ -59,5 +59,3 @@ class UserInfo extends HTMLElement {
   }
 
 }
-
-window.customElements.define('user-info', UserInfo);
