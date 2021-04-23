@@ -4,6 +4,13 @@ $head-foot-color: #2d353c;
 $murupolku: #fafafa;
 $teksti-color: #333;
 
+body {
+  position: relative;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .header,
 .footer {
   background-color:$head-foot-color;
